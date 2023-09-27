@@ -19,7 +19,7 @@ public class Main {
                 case ("/"):
                     res = firstNum / secondNum;
                     res1 = Math.floor(res);
-                    if (res - res1 == 0.0){
+                    if (res - res1 <= 0.000000000000002){
                         long result = Math.round(res);
                         System.out.print("Результат: " + result);
                         break;
@@ -29,7 +29,7 @@ public class Main {
                 case ("*"):
                     res = firstNum * secondNum;
                     res1 = Math.floor(res);
-                    if (res - res1 == 0.0){
+                    if (res - res1 <= 0.000000000000002){
                         long result = Math.round(res);
                         System.out.print("Результат: " + result);
                         break;
@@ -39,7 +39,7 @@ public class Main {
                 case ("+"):
                     res = firstNum + secondNum;
                     res1 = Math.floor(res);
-                    if (res - res1 == 0.0){
+                    if (res - res1 <= 0.000000000000002){
                         long result = Math.round(res);
                         System.out.print("Результат: " + result);
                         break;
@@ -49,7 +49,7 @@ public class Main {
                 case ("-"):
                     res = firstNum - secondNum;
                     res1 = Math.floor(res);
-                    if (res - res1 == 0.0){
+                    if (res - res1 <= 0.000000000000002){
                         long result = Math.round(res);
                         System.out.print("Результат: " + result);
                         break;
