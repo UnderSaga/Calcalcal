@@ -39,10 +39,18 @@ public class Main {
                 case ("+"):
                     res = firstNum + secondNum;
                     res1 = Math.floor(res);
-                    if (res - res1 <= 0.00000000000001){
-                        long result = Math.round(res);
-                        System.out.print("Результат: " + result);
-                        break;
+                    if (res < 0){
+                        if (res - res1 >= -0.00000000000001){
+                            long result = Math.round(res);
+                            System.out.print("Результат: " + result);
+                            break;
+                        }
+                    } else if (res > 0){
+                        if (res - res1 <= 0.00000000000001) {
+                            long result = Math.round(res);
+                            System.out.print("Результат: " + result);
+                            break;
+                        }
                     }
                     System.out.print("Результат: " + res);
                     break;
